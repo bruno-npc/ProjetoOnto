@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#"
+     xml:base="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36">
+        <rdfs:comment xml:lang="pt">Esta ontologia tem como objetivo distinguir informações entre verdadeiras ou falsas, caracterizando-as em áreas que atuam.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Possui_Caracteristica -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Possui_Caracteristica">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoInformacao -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoInformacao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Fake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Fato"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Acao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Acao"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Agente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Agente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Acao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Autor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Autor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#DataPublicacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#DataPublicacao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#DivulgacaoFalsa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#DivulgacaoFalsa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Evento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Evento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Acao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Fake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Fake">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Fato"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#FalsaAcusacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#FalsaAcusacao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Fato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Fato">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Objeto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Objeto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Acao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Ofensa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Ofensa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#OfensaAReputacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#OfensaAReputacao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#PortalComunicador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#PortalComunicador">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Texto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Texto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Titulo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Titulo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Tumulto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Tumulto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
