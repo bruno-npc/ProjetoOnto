@@ -7,7 +7,7 @@ Dispõe das ontologias criadas, chamadas de "OntoFake" para definir fake news, e
 
 # Documentação
 Baseado na metodologia "methontology".
-Link: docs.google.com/document/d/10wbhdbD41sRw3ecqzUnioNWRpebr5X1IsvKHNioq050
+- Link: [Documentação do projeto]
 
 # OntoFake
 
@@ -69,5 +69,16 @@ Link: docs.google.com/document/d/10wbhdbD41sRw3ecqzUnioNWRpebr5X1IsvKHNioq050
 
 | Ferramenta | Link | Documentação |
 | ------ | ------ | ------ |
-| Protégé | x | x |
-| OWL Ready 2 | x | x |
+| Protégé | [Protégé] | [Protégé Documentação] |
+| OWL Ready 2 | [OWLReadY2] | [OWLReadY2 Documentação] |
+
+
+
+
+
+[Protégé]: <https://protege.stanford.edu/>
+[Protégé Documentação]: <http://protegeproject.github.io/protege/>
+[OWLReadY2]: https://owlready2.readthedocs.io/en/latest/install.html
+[OWLReadY2 Documentação]: <https://owlready2.readthedocs.io/en/v0.37/>
+
+[Documentação do projeto]: <docs.google.com/document/d/10wbhdbD41sRw3ecqzUnioNWRpebr5X1IsvKHNioq050>
