@@ -13,18 +13,23 @@ Baseado na metodologia "methontology".
 # OntoFake
 
 - Ontology Metrics
+
 ![ImageMetrics](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoFake/OntoFake_Metrics.png)
 
 - Classes
+
 ![ImageClasses](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoFake/OntoFake_Classes.png)
 
 - Object Properties
+
 ![ImageObjectProperties](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoFake/OntoFake_Object%20Properties.png)
 
 - Individuals
+
 ![ImageIndividuals](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoFake/OntoFake_Individuals.png)
 
 - OWLViz
+
 ![ImageOWLViz]()
 
 # _Descrição OntoFake_
@@ -69,23 +74,28 @@ Através da pesquisa de termos, os dados puderam ser utilizados tanto na criaç�
 # OntoJuris
 
 - Ontology Metrics
+
 ![ImageMetrics](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoJuris/OntoJuris_Metrics.png)
 
 - Classes
+
 ![ImageClasses](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoJuris/OntoJuris_Classes.png)
 
 - Object Properties
+
 ![ImageObjectProperties](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoJuris/OntoJuris_Object%20Properties.png)
 
 - Individuals
+
 ![ImageIndividuals](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoJuris/OntoJuris_Individuals.png)
 
 - OWLViz
+
 ![ImageOWLViz]()
 
 # _Descrição OntoJuris_
 
-
+Para a estruturação da ontologia jurídica, foram utilizadas as leis que já tiveram aplicação de alguma forma em julgamentos contendo fake news, essa estrutura foi feita pensada para integrar com a ontologia OntoFake, por ter um “objeto” em comum entre as duas, sendo esse objeto o que é afetado da vítima que sofre a fake news e sob o que será avaliado o julgamento na ontologia jurídica, sendo este objeto a classe na OntoJuris "Bem_da_Vitima" e na OntoFake, o objeto sendo dividido em três diferentes tipos "Bem Físico", "Bem Psicologico" e "Bem social", todos contam como o mesmo bem que afeta a vitima, mas pode tratar diferentemente dependendo da gravidade na situação.
 
 - Resultados
 - Exemplo
