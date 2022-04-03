@@ -1,201 +1,305 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#"
-     xml:base="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/bruno/ontologies/2022/0/untitled-ontology-16"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36">
-        <rdfs:comment xml:lang="pt">Esta ontologia tem como objetivo distinguir informações entre verdadeiras ou falsas, caracterizando-as em áreas que atuam.</rdfs:comment>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Possui_Caracteristica -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Possui_Caracteristica">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoInformacao -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoInformacao">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Fake"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Fato"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Acao -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Acao"/>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Agente -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Agente">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Acao"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Autor -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Autor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#DataPublicacao -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#DataPublicacao">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#DivulgacaoFalsa -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#DivulgacaoFalsa">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Evento -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Evento">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Acao"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Fake -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Fake">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Fato"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#FalsaAcusacao -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#FalsaAcusacao">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Fato -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Fato">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Objeto -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Objeto">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Acao"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Ofensa -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Ofensa">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#OfensaAReputacao -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#OfensaAReputacao">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#PortalComunicador -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#PortalComunicador">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Texto -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Texto">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Titulo -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Titulo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Informacao"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Tumulto -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#Tumulto">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2021/7/untitled-ontology-36#TipoFake"/>
-    </owl:Class>
-</rdf:RDF>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/bruno/ontologies/2022/0/untitled-ontology-16">
+    <Prefix name="" IRI="http://www.semanticweb.org/bruno/ontologies/2022/0/untitled-ontology-16"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Acao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bem_Fisico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bem_Psicologico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bem_Social"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Divulgacao_Falsa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Falsa_Acusacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grupo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Individuo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Informacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noticia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Objeto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ofensa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ofensa_a_Reputacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tipo_Fake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tumulto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Afeta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Possui_Dado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Pratica_Agente"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Info_Fato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fake"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_Acusacao_Falsa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_Eu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_Info_Fake"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_Julgamento"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_Vitima"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2_Grupo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2_Info_Fake"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2_Injuria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2_Julgamento"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2_Vitima"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Agente"/>
+        <Class IRI="#Acao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bem_Fisico"/>
+        <Class IRI="#Objeto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bem_Psicologico"/>
+        <Class IRI="#Objeto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bem_Social"/>
+        <Class IRI="#Objeto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Divulgacao_Falsa"/>
+        <Class IRI="#Tipo_Fake"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evento"/>
+        <Class IRI="#Acao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Falsa_Acusacao"/>
+        <Class IRI="#Tipo_Fake"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grupo"/>
+        <Class IRI="#Agente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Individuo"/>
+        <Class IRI="#Agente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Informacao"/>
+        <Class IRI="#Noticia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ofensa"/>
+        <Class IRI="#Tipo_Fake"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ofensa_a_Reputacao"/>
+        <Class IRI="#Tipo_Fake"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tipo_Fake"/>
+        <Class IRI="#Fake"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tumulto"/>
+        <Class IRI="#Tipo_Fake"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Fake"/>
+        <Class IRI="#Fato"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Informacao"/>
+        <NamedIndividual IRI="#Info_Fato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fake"/>
+        <NamedIndividual IRI="#fake"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fato"/>
+        <NamedIndividual IRI="#fato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Falsa_Acusacao"/>
+        <NamedIndividual IRI="#1_Acusacao_Falsa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Individuo"/>
+        <NamedIndividual IRI="#1_Eu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Informacao"/>
+        <NamedIndividual IRI="#1_Info_Fake"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bem_Social"/>
+        <NamedIndividual IRI="#1_Vitima"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grupo"/>
+        <NamedIndividual IRI="#2_Grupo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Informacao"/>
+        <NamedIndividual IRI="#2_Info_Fake"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ofensa"/>
+        <NamedIndividual IRI="#2_Injuria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bem_Psicologico"/>
+        <NamedIndividual IRI="#2_Vitima"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#1_Acusacao_Falsa"/>
+        <NamedIndividual IRI="#1_Info_Fake"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#1_Eu"/>
+        <NamedIndividual IRI="#1_Julgamento"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#2_Grupo"/>
+        <NamedIndividual IRI="#2_Julgamento"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#2_Info_Fake"/>
+        <NamedIndividual IRI="#2_Injuria"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Dado"/>
+        <NamedIndividual IRI="#Info_Fato"/>
+        <NamedIndividual IRI="#fato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Afeta"/>
+        <NamedIndividual IRI="#1_Eu"/>
+        <NamedIndividual IRI="#1_Vitima"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Pratica_Agente"/>
+        <NamedIndividual IRI="#1_Eu"/>
+        <NamedIndividual IRI="#1_Acusacao_Falsa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Dado"/>
+        <NamedIndividual IRI="#1_Info_Fake"/>
+        <NamedIndividual IRI="#fake"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Afeta"/>
+        <NamedIndividual IRI="#2_Grupo"/>
+        <NamedIndividual IRI="#2_Vitima"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Pratica_Agente"/>
+        <NamedIndividual IRI="#2_Grupo"/>
+        <NamedIndividual IRI="#2_Injuria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Possui_Dado"/>
+        <NamedIndividual IRI="#2_Info_Fake"/>
+        <NamedIndividual IRI="#fake"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Afeta"/>
+        <Class IRI="#Agente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Possui_Dado"/>
+        <Class IRI="#Informacao"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Pratica_Agente"/>
+        <Class IRI="#Agente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Afeta"/>
+        <Class IRI="#Objeto"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Possui_Dado"/>
+        <ObjectUnionOf>
+            <Class IRI="#Fake"/>
+            <Class IRI="#Fato"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Pratica_Agente"/>
+        <Class IRI="#Tipo_Fake"/>
+    </ObjectPropertyRange>
+</Ontology>
 
 
 

@@ -1,83 +1,294 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/bruno/ontologies/2021/8/untitled-ontology-15"
+     xml:base="http://www.semanticweb.org/bruno/ontologies/2022/0/untitled-ontology-15"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/bruno/ontologies/2021/8/untitled-ontology-15">
+     ontologyIRI="http://www.semanticweb.org/bruno/ontologies/2022/0/untitled-ontology-15">
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <Class IRI="#Bem_da_Vitima"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Calunia"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ContravencoesPenais"/>
+        <Class IRI="#Contravencoes_Penais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crime"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Difamacao"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DivulgacoesFalsas"/>
+        <Class IRI="#Divulgacoes_Falsas"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Executor"/>
+        <Class IRI="#Grupo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Individuo"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Injuria"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Julgador"/>
+        <Class IRI="#Processo_Juridico"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LeisAplicaveis"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Valores"/>
+        <Class IRI="#Reu"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Vitima"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Afeta_alguem"/>
+        <ObjectProperty IRI="#acusacao"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Tem_acusacao"/>
+        <ObjectProperty IRI="#afeta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Acusacao_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Acusacao_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Acusacao_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Acusacao_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Crime_Calunia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Crime_Difamacao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Crime_Divulgacoes_Falsas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Crime_Injuria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grupo_Divulgacoes_Falsas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grupo_Injuria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individuo_Calunia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individuo_Difamacao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vitima_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vitima_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vitima_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vitima_4"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Calunia"/>
-        <Class IRI="#LeisAplicaveis"/>
+        <Class IRI="#Bem_da_Vitima"/>
+        <Class IRI="#Vitima"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ContravencoesPenais"/>
-        <Class IRI="#LeisAplicaveis"/>
+        <Class IRI="#Calunia"/>
+        <Class IRI="#Crime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contravencoes_Penais"/>
+        <Class IRI="#Crime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crime"/>
+        <Class IRI="#Processo_Juridico"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Difamacao"/>
-        <Class IRI="#LeisAplicaveis"/>
+        <Class IRI="#Crime"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DivulgacoesFalsas"/>
-        <Class IRI="#LeisAplicaveis"/>
+        <Class IRI="#Divulgacoes_Falsas"/>
+        <Class IRI="#Crime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grupo"/>
+        <Class IRI="#Reu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Individuo"/>
+        <Class IRI="#Reu"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Injuria"/>
-        <Class IRI="#LeisAplicaveis"/>
+        <Class IRI="#Crime"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Valores"/>
-        <Class IRI="#Vitima"/>
+        <Class IRI="#Reu"/>
+        <Class IRI="#Processo_Juridico"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vitima"/>
+        <Class IRI="#Processo_Juridico"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Reu"/>
+        <Class IRI="#Vitima"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Calunia"/>
+        <NamedIndividual IRI="#Crime_Calunia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Difamacao"/>
+        <NamedIndividual IRI="#Crime_Difamacao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Divulgacoes_Falsas"/>
+        <NamedIndividual IRI="#Crime_Divulgacoes_Falsas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Injuria"/>
+        <NamedIndividual IRI="#Crime_Injuria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grupo"/>
+        <NamedIndividual IRI="#Grupo_Divulgacoes_Falsas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Grupo"/>
+        <NamedIndividual IRI="#Grupo_Injuria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Individuo"/>
+        <NamedIndividual IRI="#Individuo_Calunia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Individuo"/>
+        <NamedIndividual IRI="#Individuo_Difamacao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bem_da_Vitima"/>
+        <NamedIndividual IRI="#Vitima_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bem_da_Vitima"/>
+        <NamedIndividual IRI="#Vitima_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bem_da_Vitima"/>
+        <NamedIndividual IRI="#Vitima_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bem_da_Vitima"/>
+        <NamedIndividual IRI="#Vitima_4"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#Acusacao_1"/>
+        <NamedIndividual IRI="#Crime_Calunia"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Acusacao_1"/>
+        <NamedIndividual IRI="#Individuo_Calunia"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Acusacao_2"/>
+        <NamedIndividual IRI="#Crime_Injuria"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Acusacao_2"/>
+        <NamedIndividual IRI="#Grupo_Injuria"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Acusacao_3"/>
+        <NamedIndividual IRI="#Crime_Divulgacoes_Falsas"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Acusacao_3"/>
+        <NamedIndividual IRI="#Grupo_Divulgacoes_Falsas"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Acusacao_4"/>
+        <NamedIndividual IRI="#Crime_Injuria"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Acusacao_4"/>
+        <NamedIndividual IRI="#Grupo_Injuria"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#afeta"/>
+        <NamedIndividual IRI="#Crime_Calunia"/>
+        <NamedIndividual IRI="#Vitima_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#afeta"/>
+        <NamedIndividual IRI="#Crime_Difamacao"/>
+        <NamedIndividual IRI="#Vitima_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#afeta"/>
+        <NamedIndividual IRI="#Crime_Divulgacoes_Falsas"/>
+        <NamedIndividual IRI="#Vitima_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#afeta"/>
+        <NamedIndividual IRI="#Crime_Divulgacoes_Falsas"/>
+        <NamedIndividual IRI="#Vitima_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#afeta"/>
+        <NamedIndividual IRI="#Crime_Injuria"/>
+        <NamedIndividual IRI="#Vitima_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acusacao"/>
+        <NamedIndividual IRI="#Grupo_Divulgacoes_Falsas"/>
+        <NamedIndividual IRI="#Crime_Divulgacoes_Falsas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acusacao"/>
+        <NamedIndividual IRI="#Grupo_Injuria"/>
+        <NamedIndividual IRI="#Crime_Injuria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acusacao"/>
+        <NamedIndividual IRI="#Individuo_Calunia"/>
+        <NamedIndividual IRI="#Crime_Calunia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acusacao"/>
+        <NamedIndividual IRI="#Individuo_Difamacao"/>
+        <NamedIndividual IRI="#Crime_Difamacao"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Tem_acusacao"/>
-        <Class IRI="#Valores"/>
+        <ObjectProperty IRI="#acusacao"/>
+        <Class IRI="#Reu"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#afeta"/>
+        <Class IRI="#Crime"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#Tem_acusacao"/>
-        <Class IRI="#LeisAplicaveis"/>
+        <ObjectProperty IRI="#acusacao"/>
+        <Class IRI="#Crime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#afeta"/>
+        <Class IRI="#Bem_da_Vitima"/>
     </ObjectPropertyRange>
 </Ontology>
 
