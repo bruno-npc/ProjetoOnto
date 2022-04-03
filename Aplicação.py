@@ -1,6 +1,7 @@
 # coding: utf-8
 from owlready2 import *
 
+#Import das ontologias
 ontoFake = get_ontology("c:/Users/Bruno/Documents/Ontology/OntoFake.owl")
 ontoFake.load()
 
