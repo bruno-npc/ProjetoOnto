@@ -1,3 +1,4 @@
+![Build Status](https://travis-ci.org/joemccann/dillinger.svg)
 # Uma Abordagem Ontológica para Inferir Implicação Penal para Fake News
 
 Modelos ontológicos formalizados na Lógica Descritiva para indexar Fake News e para representar uma porção do conhecimento jurídico-normativo, provendo assim um serviço de inferências lógicas para implicação jurídica (penal ou eleitoral) das notícias falsas.
@@ -12,23 +13,19 @@ Baseado na metodologia "methontology".
 # OntoFake
 
 - Ontology Metrics
-
-[image Ontology Metrics]
+![ImageMetrics](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoFake/OntoFake_Metrics.png)
 
 - Classes
-
-[image Classes]
+![ImageClasses](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoFake/OntoFake_Classes.png)
 
 - Object Properties
-
-[image Object Properties]
+![ImageObjectProperties](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoFake/OntoFake_Object%20Properties.png)
 
 - Individuals
-
-[image Entidades]
+![ImageIndividuals](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoFake/OntoFake_Individuals.png)
 
 - OWLViz
-
+![ImageOWLViz]()
 
 # _Descrição OntoFake_
 
@@ -72,25 +69,23 @@ Através da pesquisa de termos, os dados puderam ser utilizados tanto na criaç�
 # OntoJuris
 
 - Ontology Metrics
-
-[image Ontology Metrics]
+![ImageMetrics](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoJuris/OntoJuris_Metrics.png)
 
 - Classes
-
-[image Classes]
+![ImageClasses](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoJuris/OntoJuris_Classes.png)
 
 - Object Properties
-
-[image Object Properties]
+![ImageObjectProperties](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoJuris/OntoJuris_Object%20Properties.png)
 
 - Individuals
-
-[image Entidades]
+![ImageIndividuals](https://raw.githubusercontent.com/bruno-npc/ProjetoOnto/main/Img/OntoJuris/OntoJuris_Individuals.png)
 
 - OWLViz
-
+![ImageOWLViz]()
 
 # _Descrição OntoJuris_
+
+
 
 - Resultados
 - Exemplo
@@ -111,13 +106,13 @@ Através da pesquisa de termos, os dados puderam ser utilizados tanto na criaç�
 [OWLReadY2]: https://owlready2.readthedocs.io/en/latest/install.html
 [OWLReadY2 Documentação]: <https://owlready2.readthedocs.io/en/v0.37/>
 
-[Documentação do projeto]: <docs.google.com/document/d/10wbhdbD41sRw3ecqzUnioNWRpebr5X1IsvKHNioq050>
+[Documentação do projeto]: <https://docs.google.com/document/d/10wbhdbD41sRw3ecqzUnioNWRpebr5X1IsvKHNioq050/edit?usp=sharing>
 
-[Agência Lupa]: <piaui.folha.uol.com.br/lupa>
-[Fato ou Fake]: <g1.globo.com/fato-ou-fake/>
+[Agência Lupa]: <https://piaui.folha.uol.com.br/lupa/>
+[Fato ou Fake]: <https://g1.globo.com/fato-ou-fake/>
 [Agência Pública]: <https://apublica.org/>
-[E-Farsas]: <www.e-farsas.com>
-[Fake Check]: <nilcfakenews.herokuapp.com>
-[Comprova]: <projetocomprova.com.br>
-[Aos Fatos]: <www.aosfatos.org>
-[Boatos]: <www.boatos.org>
+[E-Farsas]: <https://www.e-farsas.com/>
+[Fake Check]: <https://nilcfakenews.herokuapp.com/>
+[Comprova]: <https://projetocomprova.com.br/>
+[Aos Fatos]: <https://www.aosfatos.org/>
+[Boatos]: <https://www.boatos.org/>
